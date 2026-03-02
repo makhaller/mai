@@ -23,7 +23,7 @@ def counting_vowels_and_consonants(text):
                 consonant_count += 1
     return (vowel_count, consonant_count)
 
-pargraph = "Hello, world!"
+paragraph = "Hello, world!"
 print(counting_vowels_and_consonants(pargraph))
 
 # --- 2. Average Vowels ---
