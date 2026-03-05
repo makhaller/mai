@@ -1,0 +1,78 @@
+Brainstorm for the Final Project
+(1) 5 topics that are interesting to me: astrobiology, space missions 
+to planetary moons, cosmology, particle astrophysics, effects of low 
+or zero gravity on biology (human body, plants, microbes, etc)
+(2) Space missions to moons
+Source: https://science.nasa.gov/mission/europa-clipper/ 
+Summary:
+This article explains NASA's Europa Clipper mission, which 
+is designed (and already launched) to study Jupiter's moon Europa. 
+Scientists believe that Europa has a large ocean of liquid water 
+beneath its icy surface, which could potentially support life. 
+The spacecraft will orbit Jupiter and perform dozens of close flybys to 
+Europa to collect data about its ice shell, coean, surface composition, 
+and geology. The spacecraft will not land on Europa but instead explore 
+its surface to help design missions for future landing on the moon. 
+This article combines two topics I am interested in: astrobiology and 
+missions to moons in our solar system. The spacecraft can explore such moons 
+to try and understand whether they mught have environments suitable for life. 
+
+Particle Astrophysics 
+Source: https://icecube.wisc.edu/science/research/ 
+Summary:
+This article discusses from the IceCube Neutrino Observatory, which detects
+neutrinos, extremeley small, high-energy particles that travel through space.
+Particle astrophysics studies particles like neutrinos, cosmic rays, and gamma rays 
+to understand powerful cosmic events such as supernovae, black mholes, and active
+galaxies. Because neutrinos ineract very weakly with matter they can travel across 
+the universe without being signifcantly absorbed or defelcted, preserving information 
+about where and how they were produced. Scientists measure properties of these particles, 
+such as their energy, arrival direction, and timing, using detectors like IceCube. By 
+tracing the direction they came from and comparing it with observations of objects in 
+the same region of the sky, researchers cna identify the likely sources and study the 
+extreme enviornments that accelerated the particles to such high energies. This helps 
+scientists understand the physical processes, such as strong gravity, magentic fields, and 
+particle acceleration, that occur in some of the most energetic events in the universe. 
+
+The effects of low/zero gravity on biology
+Source: https://pmc.ncbi.nlm.nih.gov/articles/PMC10351380/ 
+Summary: This article explains how gravity influences biological systems from the cellular 
+level to whole organisms. On Earth, gravity constantly acts on fluids, cells, and tissues,
+helping determine things like fluid distribution, how cells orient themselves, and how mehcnical 
+forces shape biological structures. In microgravity, these forces change significantly: fluids shift 
+thoughout the body, cells experience different mechanical stresses, and signaling pathways that
+depend on mechanical forces behave differently. The article describes how htese changes can 
+affect processes such as cell growth, gene expression, and tissue organization. Studying biology in 
+microgravity therefore helps scientists understand how physical forces inlfuence biologucal systems
+and how organisms adapt when this fundamental force is removed. 
+
+(3) Space missions to moons:
+I could make a "Moon Mission Planner" program in Python that helps compare moons as potential 
+mission targets (based on habitability). I would create a small dataset (either a CSV I make myself or
+data copies from NASA pages) for moons like Europa, Enceladus, Titan, Ganymede, and Triton. Each moon
+would have fields like: distance from Earth and Sun, surface temperature, gravity, evidence of an ocean, 
+presence of an atmosphere, and what missions have visited it. In Python, I would store each moon as a 
+dictionary and keep all moons in a list. Then I could write functions that:
+-filter moons based on requirements (ex: has evidence of liquid water and temperature above x)
+-compute a simple score (ex: +3 for ocean ecidence, +2 for amtpshere, -1 for extreme cold, etc)
+-sort and print a ranked list of "best targets" based on the scoring rules I chose 
+I would use loops to go through all the moons, conditionals to apply filters/scoring rules, and functions 
+to keep the code organized. I could also output a clean summary table to the terminal (name, score, key
+features) to make it easy to compare targets. I would use GitHub/version control to track improvements. 
+
+(4) Dream project (ambitious):
+I would turn my "Moon Mission Planner" into a visual dashboard. In addition to building the dataset, 
+filtering, scoring, and ranking system, I would add a visual interface that shows (1) an image of each moon
+(real NASA images when available, or artistic images if needed), (2) a simple visualizatino of a 
+spacecraft's path/trajectory concept to reach the target (even if it's simplified to a diagram rather than an 
+accryate orbital simulation), and (3) visual callouts of key features like suspected oceans, ice shells, 
+atmospheres, etc. The final output would be like a mini "mission selection app" where you can browse targets,
+see why they score the way they did, and view a visual summary rather than only text. 
+
+Realistic project (doable in a few weeks):
+I would complete a polished, text-first version of the Moon Mission Planner using a small datset of -5-8 moons 
+(Europa, Enceladus, Titan, Ganymede, Trition, etc.) stores as a CSV or list of dictionaries. The program would: 
+(1) load the data, (2) let the user choose simple requirements (ex: must have ocean evidence, must have an 
+atmosphere, or temperature above X), (3) compute a habitability score using clear rules (+points for ocean evidence
+and atmosphere, -points for extreme cold or high radiation), and (4) print a ranked list wiht a short breakdown of the 
+score for each moon (ex: Europa: +3 ocean, +2 missions, -2 eadiation = 3). 
